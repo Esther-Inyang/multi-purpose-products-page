@@ -202,46 +202,11 @@ label{
     color: #333333;
     font-weight: 600;
     font-size: 23px;
-    margin-bottom: 6px;
 }
 
-.services-underline,
-.choose-underline,
-.price-underline,
-.getIntouch-underline,
-.works-underline,
-.team-underline,
-.blog-underline{
-    border-top: 2px solid #f97794;
-    width: 75px;
-}
-
-.services-underline{
-    margin-left: 100px; 
-}
-
-.choose-underline{
-    margin-left: 90px;
-}
-
-.works-underline{
-    margin-left: 95px;
-}
-
-.price-underline{
-    margin-left: 97px;
-}
-
-.team-underline{
-    margin-left: 125px;
-}
-
-.blog-underline{
-    margin-left: 150px;
-}
-
-.getIntouch-underline{
-    margin-left: 106px;  
+.underlines{
+    border-bottom: 2px solid #f97794;
+    padding-bottom: 7px;
 }
 
 .ourservices-text,
@@ -310,7 +275,7 @@ label{
     text-align: center;
     margin-top: 30px;
     width: 100%;
-    height: 300px;
+    height: auto;
     padding: 22px;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -718,22 +683,26 @@ label{
     background-color: white;
 }
 
-.employee1-details{
+.employee1-details, 
+.employee2-details{
     display: flex;
 }
 
-.employee1-image img{
+.employee1-image img,
+.employee2-image img{
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.employee1-titleDiv {
+.employee1-titleDiv,
+.employee2-titleDiv{
     margin-left: 15px;
     font-size: 18px;
 }
 
-.employee1-name{
+.employee1-name,
+.employee2-name{
     font-weight: 600;
     font-size: 20px;
 }
@@ -976,13 +945,12 @@ input[type=submit]{
 .tips-box{
     width: 100%; 
     margin-top: 20px;
-    box-shadow: 0px 10px 20px 18px lightgray;
-    /*box-shadow: 3px 3px 4px lightgray;*/
+    box-shadow: 1px 5px 15px 5px lightgray;
 }
 
 .tips-box:hover{
-    transition: 2s;
-    box-shadow: 3px 10px 20px 10px lightgray;
+    transition: 1s;
+    box-shadow: 5px 3px 4px lightgray;
 }
 
 .tips-img img{
@@ -1390,35 +1358,7 @@ footer{
         margin: 150px auto; 
     }    
 
-    /*********SERVICES.....etc underline*************/
-    .services-underline{
-        margin-left: 295px;  
-    }
     
-    .choose-underline{
-        margin-left: 285px; 
-    }
-    
-    .works-underline{
-        margin-left: 290px; 
-    }
-    
-    .price-underline{
-        margin-left: 295px; 
-    }
-    
-    .team-underline{
-        margin-left: 322px; 
-    }
-    
-    .blog-underline{
-        margin-left: 345px; 
-    }
-
-    .getIntouch-underline{
-        margin-left: 300px;  
-    }
-
     /**********ARTICLES-SECTION**********/
     .articles1-section, .articles2-section{
         width: 75%; 
@@ -1664,8 +1604,8 @@ footer{
     }
 
     .slides-section{
-        height: 650px; 
-        padding-top: 220px; 
+        height: 750px; 
+        padding-top: 270px; 
     }
 
     .sliding-bars-div{
@@ -1690,7 +1630,7 @@ footer{
     }
 
     .sliding-bars-div{
-        width: 6%; 
+        width: 7%; 
         margin: 100px auto; 
     }
 
@@ -1716,34 +1656,6 @@ footer{
         color: #333333;
     }
 
-    .services-underline{
-        margin-left: 545px; 
-    }
-
-    .getIntouch-underline{
-        margin-left: 552px;  
-    }
-
-    .price-underline{
-        margin-left: 540px; 
-    }
-
-    .choose-underline{
-        margin-left: 525px; 
-    }
-
-    .works-underline{
-        margin-left: 546px; 
-    }
-
-    .team-underline{
-        margin-left: 585px; 
-    }
-
-    .blog-underline{
-        margin-left: 613px; 
-    }
-
     .services-watermarkText,
     .why-watermarkText,
     .works-watermarkText,
@@ -1755,7 +1667,14 @@ footer{
     }
 
     /**********ARTICLES-SECTION**********/
+    
+    .articles1-section, .articles2-section{
+        width: 90%; 
+        margin: 0 auto;
+    }
+
     .articles1-div, .articles2-div{
+        width: 100%;
         display: flex; 
         justify-content: space-between; 
         padding: 0 20px 0 20px; 
@@ -1769,7 +1688,7 @@ footer{
     .app-development,
     .digital-marketing{
         margin-top: 0; 
-        width: 32%; 
+        width: 30%; 
         padding: 30px; 
     }
 
@@ -1816,12 +1735,11 @@ footer{
 
     /**********BUTTONS-SECTION**********/
     .buttons{
-        width: 100%; 
+        width: 45%; 
     }
 
     .btn_div1{   
         width: 100%; 
-        padding: 0 420px 0 420px; 
         display: flex; 
         justify-content: space-between; 
     }
@@ -1897,8 +1815,9 @@ footer{
 
     /**********EMPLOYEES-SECTION**********/
     .employees-section{
-        width: 100%; 
-        padding: 100px 150px 50px 150px; 
+        width: 95%;
+        margin: 0 auto; 
+        padding:0; 
     }
 
     .employees-wrapper{
@@ -1980,14 +1899,15 @@ footer{
 
     /**********TIPS-SECTION**********/
     .tips-div{
-        width: 100%; 
-        padding: 0 120px 0 120px; 
+        width: 90%; 
+        margin: 0 auto;
         display: flex; 
         justify-content: space-between; 
+        padding: 0;
     }
 
     .tips-box{
-        width: 31%; 
+        width: 32%; 
     }
 
     .tips-img img{
